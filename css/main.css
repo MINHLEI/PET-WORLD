@@ -1,0 +1,193 @@
+body {
+    background-color: rgb(255, 215, 254);
+    font-family: 'Pacifico', cursive;
+}
+.active-purple-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #ce93d8;
+    box-shadow: 0 1px 0 0 #ce93d8;
+  }
+  
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+   
+  border-color:unset;
+  outline: 0;
+  box-shadow: unset;
+  border-bottom: 1px solid #ce93d8;
+  box-shadow: 0 1px 0 0 #ce93d8;
+}
+.form-control{
+  border: none;
+  border-bottom: 2px solid #ced4da;
+  border-radius: 100;
+  outline: none;
+  box-shadow: none;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+  
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+  
+input[type=text] {
+  /* background-color: #f1f1f1; */
+  width: 100%;
+}
+  
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+  
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+  
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; }
+  
+  /*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+  
+  /*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  font-size: 150%;
+  color:#3c4753
+}
+.logo {
+  width: 13%;
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 138px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.container2 {
+  position: relative;
+  width: 650px;
+}
+
+
+/* thuộc tính ảnh */
+.image {
+  width: 100%;
+  height: auto;
+  border: solid 4px purple;
+}
+
+
+
+/* dùng chỉnh vị trí và phần khung chữ sau khi đc hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 215, 254, 0.319);
+}
+
+
+/* dùng để hover */
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+/* dùng để chỉnh chữ bên trong img */
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+#myBtn {
+  height: 100px;
+  width: auto;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 25px;
+  
+  
+}
+
